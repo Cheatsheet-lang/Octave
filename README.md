@@ -60,6 +60,29 @@ col = [1; 2; 3]     % Column vector ; separates the rows
 length(row)         % Gives the length of vector/ length of longest dimension in matrix
 ```
 
+## In-built Functions
+
+#### Mathematical
+```octave
+v = [0.26, 2.22, 4]
+matrix = [1, 23; 30, 4; 5, 6]
+
+log(3)              % Logrithmic
+exp([1, 2])         % Exponential
+abs([-1, 2, -3])    % Absolute
+-v                  % similar to -1 * v
+
+[val, ind] = max(v) % Returns an array of which has max value and it's index
+max(matrix)     % Returns column-wise maximum
+
+find([1, 0, 3, 2])      % Returns the indexes of all the non-zero elements
+magic(3)        % returns a 3x3 magic square matrix
+
+sum(matrix)     % Sum of a matrix
+floor(v)
+ceil(v)
+```
+
 #### Matrices
 ```octave
 matrix = [1, 2; 3, 4; 5, 6]
@@ -81,6 +104,14 @@ matrix(:)       % Put all the elements into a single column vector
 
 mat_concat = [matrix mat]   % Concatenate matrices side by side [matrix, mat]
 mat_concat = [matrix; mat]  % Concatenate matrices one above the other
+
+matrix * mat    % Matrix multiplication
+matrix .* mat   % This is element-wise multiplication, similarly .+, ./, .^
+
+matrix'         % Matrix transpose
+transpose(matrix)
+
+pinv(matrix)    % Pseudo Inverse matrix 
 ```
 
 #### Iterators
