@@ -121,5 +121,16 @@ v = 1:0.1:2     % Start:step-size:end deafult step-size is 1
 
 ## Plotting
 ```octave
+a = magic(5)
+plot(x, y)              % Makes a two dimensional graph
+hold on;                % To plot one or more plots at a time
+xlabel("label")         % Label on the x-axis
+ylabel("label")         % Label on the y-axis
+
+print -dpng '<filename>'    % To save into a file
+subplot(1, 2, 1)        % Divide the figure into 1 row 2 columns and access the 1st figure  
+
+imagesc(a), colorbar, colormap gray;    % Plots using colors
+
 hist(randn(1, 100))     % Plots a histogram hist(<vector>, [bins])
 ```
