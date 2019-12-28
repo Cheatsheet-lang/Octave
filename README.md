@@ -134,3 +134,40 @@ imagesc(a), colorbar, colormap gray;    % Plots using colors
 
 hist(randn(1, 100))     % Plots a histogram hist(<vector>, [bins])
 ```
+
+## Control Statements
+
+#### If else
+```octave
+v = zeros(10, 1);
+
+i = 0;
+while true,
+    v(i) = i*i;
+    if i == 6,
+        break;
+    else
+        disp("Value is not 6")
+    end;
+end;
+```
+
+#### For
+```octave
+v = zeros(10, 1);
+
+for i=1:10,
+    v(i) = i*i;
+end;
+```
+
+#### While
+```octave
+v = zeros(10, 1);
+
+i = 0;
+while i < 5,
+    v(i) = 10*i;
+    i = i + 1;
+end;
+```
