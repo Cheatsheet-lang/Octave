@@ -171,3 +171,10 @@ while i < 5,
     i = i + 1;
 end;
 ```
+
+#### Functions
+```octave
+function y = squareNumber(x),
+    y = x ^ 2;
+end;
+```
