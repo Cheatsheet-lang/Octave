@@ -13,6 +13,8 @@ whos        % Gives the detailed display of variables
 clear a     % Deletes the variable a
 save variable.mat a;    % Saves the variable a in the file
 save variable.txt a -ascii;    % Saves the variable a in human readable
+
+pause;      % Go into an infinte sleep mode, by pressing enter you can return to prompt
 ```
 
 ## Basic Operations
