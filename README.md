@@ -11,6 +11,9 @@ who         % Displays all the variables in the scope
 whos        % Gives the detailed display of variables
 
 clear a     % Deletes the variable a
+clc         % Clear Screen
+close       % Close the given figure
+
 save variable.mat a;    % Saves the variable a in the file
 save variable.txt a -ascii;    % Saves the variable a in human readable
 
